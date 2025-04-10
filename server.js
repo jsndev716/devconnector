@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 });
 
 // Define Routes
+app.use('/api/daygift', require("./routes/api/daygift"));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
